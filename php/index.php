@@ -49,7 +49,7 @@
     </header>
     <!-- page main _____________ -->
     <main>
-        <!-- first-block ----------- -->
+        <!-- first-block __________ -->
         <div class="first-block">
             <div>
                 <h2 class="title-block">
