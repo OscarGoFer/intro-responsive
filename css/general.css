@@ -1,0 +1,472 @@
+:root {
+    --red: #d03b40;
+    --beige: #ded6c0;
+    --white: #f5f0ed;
+    --gray: #241d1b;
+    --text-white: #f5f0ed;
+    --text-dack: #3c3c3b;
+}
+
+* {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* font-size base _______________ */
+html {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 115%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 16px;
+    line-height: 130%;
+}
+
+a{
+    font-size: 1.16rem;
+}
+
+
+@media screen and (min-width: 550px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 780px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1010px){
+    html{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    html{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* line 67 - ../php/index.php */
+div.first-block div:first-child {
+    background-color: var(--red);
+    padding: 5%;
+}
+
+/* line 68 & 71 - ../php/index.php */
+div.first-block div:first-child :first-of-type {
+    color: var(--beige);
+    text-align: center;
+}
+
+/* line 68 & 79 - ../php/index.php */
+.title-block {
+    padding: 0px 0px;
+    line-height: 28px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+/* line 71 & 82 - ../php/index.php */
+.body-block {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+/* line 78 - ../php/index.php */
+div.first-block div:last-child {
+    background-color: var(--beige);
+    padding: 5%;
+}
+
+/* line 76 & 79 - ../php/index.php */
+div.first-block div:last-child :first-of-type {
+    text-align: center;
+    color: var(--red);
+}
+
+/* line 90 - ../php/index.php */
+div.secund-block {
+    height: 75vh;
+    background-image: url(../image/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.secund-block div.content {
+    text-align: center;
+}
+
+div.secund-block h1 {
+    display: inline-block;
+}
+
+.button-productos {
+    background-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+    border: 3px solid var(--white);
+    margin: 0px 16px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-productos:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+    border-color: rgb(255, 255, 255, 0.7);
+}
+
+.button-productos p {
+    color: var(--text-white);
+    margin: 16px 0px;
+    font-size: 14px;
+}
+
+/* ------------------- */
+
+div.third-block {
+    background-color: var(--white);
+}
+
+.third-block .first-section .content-icon-text {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 0px;
+}
+
+img {
+    width: 30%;
+}
+
+div.content-text {
+    text-align: left;
+}
+
+div.content-text h2,
+div.content-text p {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.content-text h2 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+div.content-text p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* ------------------- */
+
+/* estilos responsive */
+@media screen and (min-width: 325px) {
+    .button-productos {
+        display: inline-block;
+        width: 295px;
+    }
+}
+
+@media screen and (min-width: 330px) and (max-width: 599px) {
+    .title-block {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    div.secund-block {
+        background-position-x: -160px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    div.secund-block {
+        background-position-x: -150px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    div.secund-block {
+        background-position-x: -135px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    div.secund-block {
+        background-position-x: -125px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+    .body-block {
+        width: 405px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    div.secund-block {
+        background-position-x: -110px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    div.secund-block {
+        background-position-x: -100px;
+    }
+}
+
+@media screen and (min-width: 525px) {
+    div.secund-block {
+        background-position-x: -85px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    div.secund-block {
+        background-position-x: -75px;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    div.secund-block {
+        background-position-x: -60px;
+    }
+}
+
+@media screen and (min-width: 599px) {
+    .first-block {
+        display: flex;
+        align-items: stretch;
+    }
+
+    div.first-block div {
+        width: 50%;
+        float: left;
+    }
+
+    div.secund-block {
+        background-position-x: -50px;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .third-block .first-section .content-icon-text {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    div.content-icon {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    div.content-text {
+        width: 70%;
+    }
+
+    .third-block .first-section .content-icon-text div {
+        float: left;
+    }
+
+    div.content-text h2 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    div.secund-block {
+        background-position-x: -35px;
+    }
+
+    div.content-text {
+        width: 415px;
+    }
+}
+
+@media screen and (min-width: 637px) {
+    img {
+        height: 182px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    div.secund-block {
+        background-position-x: -25px;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    div.secund-block {
+        background-position-x: -10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    div.secund-block {
+        background-position-x: 0px;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .title-block {
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 810px) {
+    div.third-block .first-section {
+        display: flex;
+        width: 100%;
+    }
+
+    .third-block .first-section .content-icon-text {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .third-block .first-section .content-icon-text div {
+        float: none;
+    }
+
+    div.content-text {
+        margin-top: 10px;
+        width: auto;
+    }
+
+    div.content-icon {
+        display: block;
+        width: 100%;
+    }
+
+    img {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 925px) {
+    div.content-text h2 {
+        margin-top: 11px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    div.content-text h2,
+    div.content-text p {
+        max-width: none;
+        width: auto;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    div.content-text h2 {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 975px) {
+    div.content-text h2 {
+        margin-top: 13px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    div.content-text h2 {
+        margin-top: 14px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .body-block {
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.content-text h2 {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .third-block .first-section .content-icon-text {
+        display: flex;
+        align-items: stretch;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    div.content-icon {
+        width: 30%;
+    }
+
+    div.content-text {
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    .third-block .first-section .content-icon-text div {
+        float: left;
+    }
+
+    img {
+        max-height: 182px;
+        max-width: 182px;
+        width: 100%;
+    }
+
+    div.content-text h2,
+    div.content-text p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 375px;
+    }
+
+    div.content-text h2 {
+        margin-top: 0px;
+    }
+}

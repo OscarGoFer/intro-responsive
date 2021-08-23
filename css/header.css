@@ -1,0 +1,189 @@
+/* styles mobile first __________________ */
+/* line 41 - ../php/index.php ___________ */
+header {
+    display: flex;
+    height: 100vh;
+    background: url(../image/Fondo3.png) no-repeat center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+/* line 42 - ../php/index.php ___________ */
+img.logo {
+    position: absolute;
+    height: 42px;
+    width: 160px;
+    top: 19px;
+    left: 14px;
+}
+
+/* line 47 - ../php/index.php ___________ */
+button.deploy-menu {
+    color: var(--beige);
+    background-color: var(--red);
+    border: none;
+    padding: 0px 2px;
+    position: absolute;
+    top: 27px;
+    right: 14px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button.deploy-menu:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 55 - ../php/index.php ___________ */
+nav#menu {
+    position: absolute;
+    top: 72px;
+    left: 14px;
+    right: 14px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+nav#menu.event-deploy-menu {
+    height: 118px;
+}
+
+/* line 56. 60 - ../php/index.php */
+nav a.item-menu {
+    display: block;
+    background-color: var(--red);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-white);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav a.item-menu:hover {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* line 62 - /php/index.php _____ */
+div.content-title {
+    text-align: center;
+    color: var(--text-white);
+}
+
+/* line 63 - ../php/index.php ___ */
+h1.title-slogan {
+    display: inline-block;
+    width: 250px;
+    font-weight: bold;
+}
+
+/* line 66 - ../php/index.php ___ */
+hr.separator {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: var(--white);
+    height: 2px;
+    width: 80px;
+}
+
+/* line 67 - ../php/index.php ___ */
+p.text-slogan {
+    max-width: 525px;
+    margin: 0px 15px;
+}
+
+/* media ____________________________________________________________ */
+@media screen and (min-width: 550px) {
+    img.logo {
+        left: 18.25px;
+    }
+
+    button.deploy-menu {
+        right: 18.25px;
+    }
+
+    nav#menu {
+        left: 18.25px;
+        right: 18.25px;
+    }
+
+    h1.title-slogan {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    img.logo {
+        left: 22.5px;
+    }
+
+    /* menu fijo no desplegable */
+    button.deploy-menu {
+        display: none;
+    }
+
+    nav#menu {
+        height: auto;
+        top: 48px;
+        right: 22.5px;
+        text-align: right;
+    }
+
+    nav a.item-menu {
+        display: inline-block;
+        background-color: transparent;
+        padding: 0px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+
+    nav a.item-menu:first-child {
+        margin-left: 0px;
+    }
+
+    nav a.item-menu:last-child {
+        margin-right: 0px;
+    }
+
+    nav a.item-menu:hover {
+        background-color: transparent;
+    }
+
+    h1.title-slogan {
+        width: 290px;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    img.logo {
+        left: 26.75px;
+    }
+
+    nav a.item-menu {
+        margin-left: 6.25px;
+        margin-right: 6.25px;
+    }
+
+    h1.title-slogan {
+        width: 310px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    img.logo {
+        left: 31px;
+    }
+
+    nav a.item-menu {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1.title-slogan {
+        width: 330px;
+    }
+}
