@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/general.css?v=<?php echo rand(); ?>">
     <link rel="stylesheet" href="../css/header.css?v=<?php echo rand(); ?>">
     <!-- site title ____________ -->
-    <title>Proyecto Final - Domestika</title>
+    <title>Proyecto Final</title>
 </head>
 
 <body>
